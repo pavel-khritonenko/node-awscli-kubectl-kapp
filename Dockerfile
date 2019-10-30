@@ -1,6 +1,6 @@
 FROM node:12-alpine
 
-RUN apk --no-cache add curl bash git make musl-dev docker python py-pip
+RUN apk --no-cache add alpine-sdk curl bash git make musl-dev docker python py-pip openssh
 
 ARG KUBECTL_VERSION=v1.16.0
 
