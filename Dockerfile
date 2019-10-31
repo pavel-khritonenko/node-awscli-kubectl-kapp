@@ -27,3 +27,4 @@ RUN curl -OL https://github.com/k14s/kapp/releases/download/${KAPP_VERSION}/kapp
 
 LABEL name="node-awscli-kubectl-kapp"
 LABEL version="0.0.1"
+ENV PATH="./node_modules/.bin:${PATH}"
