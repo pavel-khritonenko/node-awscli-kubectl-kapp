@@ -1,4 +1,4 @@
-FROM node:12-alpine
+FROM node:12.15-alpine # they broke tsc referencing in 12.16 for apline linux
 
 RUN apk --no-cache add alpine-sdk curl bash git make musl-dev docker python py-pip openssh
 
