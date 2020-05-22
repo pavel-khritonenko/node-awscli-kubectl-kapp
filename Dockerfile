@@ -19,7 +19,7 @@ RUN curl -O https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/
     && mv aws-iam-authenticator /usr/local/bin \
     && chmod +x /usr/local/bin/aws-iam-authenticator
 
-ARG KAPP_VERSION=v0.13.0 
+ARG KAPP_VERSION=v0.18.0 
 
 RUN curl -OL https://github.com/k14s/kapp/releases/download/${KAPP_VERSION}/kapp-linux-amd64 \
     && mv kapp-linux-amd64 /usr/local/bin/kapp \
